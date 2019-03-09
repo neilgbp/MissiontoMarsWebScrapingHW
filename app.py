@@ -4,11 +4,7 @@ import scrape_mars
 from selenium import webdriver
 
 app = Flask(__name__)
-
-# app.config["MONGO_URI"] = "mongodb://localhost:27017/nasa_app"
-# mongo = PyMongo(app)
-
-mongo = PyMongo(app, uri="mongodb://localhost:27017/nasa_app")
+mongo = PyMongo(app, uri="mongodb://localhost:27017/mars_app")
 
 mars_data = {}
 
